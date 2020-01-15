@@ -1,0 +1,119 @@
+{
+	"type": "Bourbon",
+	"brand": "Basil Hayden",
+	"name": "Kentucky Straight",
+	"inv_amts": [
+		{
+			"date": {"$date":"2019-10-01T00:00:00.000Z"},
+			"amount": 4.5
+		},
+		{
+			"date": {"$date":"2019-10-15T00:00:00.000Z"},
+			"amount": 3.4
+		},
+		{
+			"date": {"$date":"2019-11-01T00:00:00.000Z"},
+			"amount": 2.1
+		}	
+	],
+	"pur_amts": [
+
+	]
+}
+{
+	"type": "Bourbon",
+	"brand": "Blanton",
+	"name": "Original Single Barrel",
+	"inv_amts": [
+		{
+			"date": {"$date":"2019-10-01T00:00:00.000Z"},
+			"amount": 1.5
+		},
+		{
+			"date": {"$date":"2019-10-15T00:00:00.000Z"},
+			"amount": 3.3
+		},
+		{
+			"date": {"$date":"2019-11-01T00:00:00.000Z"},
+			"amount": 3.0
+		}		
+	],	
+	"pur_amts": [
+		{
+			"date": {"$date":"2019-10-09T00:00:00.000Z"},
+			"amount": 2
+		}
+	]
+}
+{
+	"type": "Red Wine",
+	"brand": "Stags Leap",
+	"name": "Cabernet Sauvignon",
+	"inv_amts": [
+		{
+			"date": {"$date":"2019-10-01T00:00:00.000Z"},
+			"amount": 44.0
+		},
+		{
+			"date": {"$date":"2019-10-15T00:00:00.000Z"},
+			"amount": 42.2
+		},
+		{
+			"date": {"$date":"2019-11-01T00:00:00.000Z"},
+			"amount": 38.8
+		}	
+	],
+	"pur_amts": [
+
+	]
+}
+{
+	"type": "White Wine",
+	"brand": "Charles Smith",
+	"name": "Kung Fu Girl",
+	"inv_amts": [
+		{
+			"date": {"$date":"2019-10-01T00:00:00.000Z"},
+			"amount": 24.2
+		},
+		{
+			"date": {"$date":"2019-10-15T00:00:00.000Z"},
+			"amount": 35.8
+		},
+		{
+			"date": {"$date":"2019-11-01T00:00:00.000Z"},
+			"amount": 33.0
+		}	
+	],
+	"pur_amts": [
+		{
+			"date": {"$date":"2019-10-09T00:00:00.000Z"},
+			"amount": 12
+		}
+	]
+}
+{
+	"type": "Rum",
+	"brand": "Malibu",
+	"name": "Original Coconut",
+	"inv_amts": [
+		{
+			"date": {"$date":"2019-10-01T00:00:00.000Z"},
+			"amount": 2.2
+		},
+		{
+			"date": {"$date":"2019-10-15T00:00:00.000Z"},
+			"amount": 2.2
+		},
+		{
+			"date": {"$date":"2019-11-01T00:00:00.000Z"},
+			"amount": 1.7
+		}	
+	],
+	"pur_amts": [
+
+	]
+}
+
+
+
