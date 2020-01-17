@@ -11,7 +11,6 @@ const jwt = require('jsonwebtoken');
 const config = require('../config');
 
 var loginUserRouter = express.Router();
-loginUserRouter.use(cors());
 
 loginUserRouter.post("/login", (req, res) => {
 	console.log('i am in login - back');

@@ -9,7 +9,6 @@ const { Booze } = require('../models');
 var reportRouter = express.Router();
 const middleware = require('../middleware');
 
-reportRouter.use(cors());
 reportRouter.use(middleware.verifyToken);
 
 reportRouter.get("/show-reports/:token", (req, res) => {

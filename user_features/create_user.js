@@ -11,7 +11,6 @@ const jwt = require('jsonwebtoken');
 const config = require('../config');
 
 var createUserRouter = express.Router();
-createUserRouter.use(cors());
 
 createUserRouter.post("/create-user", (req, res) => {
     console.log('in create-user - back');

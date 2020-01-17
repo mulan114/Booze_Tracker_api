@@ -9,7 +9,6 @@ const { Booze } = require('../models');
 var addInventoryRouter = express.Router();
 const middleware = require('../middleware');
 
-addInventoryRouter.use(cors());
 addInventoryRouter.use(middleware.verifyToken);
 
 addInventoryRouter.post("/add-inventory/:token", (req, res) => {
