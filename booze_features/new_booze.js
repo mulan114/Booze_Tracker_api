@@ -10,6 +10,7 @@ const { Grouping } = require('../models');
 var newBoozeRouter = express.Router();
 const middleware = require('../middleware');
 
+newBoozeRouter.use(cors());
 newBoozeRouter.use(middleware.verifyToken);
 
 newBoozeRouter.post("/new-booze/:token", (req, res) => {

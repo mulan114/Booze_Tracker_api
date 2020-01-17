@@ -9,6 +9,7 @@ const { Grouping } = require('../models');
 var boozePullRouter = express.Router();
 const middleware = require('../middleware');
 
+boozePullRouter.use(cors());
 boozePullRouter.use(middleware.verifyToken);
 
 boozePullRouter.get("/booze-pull/:token", (req, res) => {

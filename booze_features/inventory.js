@@ -10,6 +10,7 @@ const { User } = require('../models');
 var inventoryRouter = express.Router();
 const middleware = require('../middleware');
 
+inventoryRouter.use(cors());
 inventoryRouter.use(middleware.verifyToken);
 
 inventoryRouter.get("/inventory/:token", (req, res) => {
