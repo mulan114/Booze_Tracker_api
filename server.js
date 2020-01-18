@@ -23,9 +23,7 @@ const newBoozeRouter = require('./booze_features/new_booze');
 mongoose.Promise = global.Promise;
 
 const app = express();
-app.use(cors({
-	origin: 'https://booze-tracking.herokuapp.com'
-}));
+app.use(cors());
 app.use(express.json());
 app.use(express.static('public'));
 
