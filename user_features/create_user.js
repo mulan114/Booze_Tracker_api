@@ -14,6 +14,12 @@ var createUserRouter = express.Router();
 
 createUserRouter.post("/create-user", (req, res) => {
     console.log('in create-user - back');
+    if (!(req.body.organization) || !(req.body.uName) || !(req.body.lName) || !(req.body.lName) || !(req.body.pWord)) {
+        res.status(401).json({
+            message: `All fields must be completed`
+        });
+        return;
+    }
     User.findOne({uName: req.body.uName})
         .then((user) => {
             if(user){
@@ -36,10 +42,22 @@ createUserRouter.post("/create-user", (req, res) => {
                     newUser
                         .save()
                         .then(user => {
+                            let userToken = {
+                                uName: user.uName,
+                                id: user._id
+                            };
+
+                            let token = jwt.sign(userToken, config.JWT_SECRET);
+                            console.log(token);
+
                             res.status(200).json({
-                                message: "This is the user!!",
-                                data: user
-                            });
+                                message: ` ${user.uName} successfully created and logged in `,
+                                data: {
+                                    userId: user._id,
+                                    token: token,
+                                    uName: user.uName
+                                }
+                            })
                         })
                         .catch(err => {
                             res.status(500).json({
